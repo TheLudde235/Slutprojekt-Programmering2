@@ -2,4 +2,4 @@
 
 Ludvig Lagerströms slutprojekt i Programmering 2
 
-Skrivet i C#, Windows Forms som GUI+
+Skrivet i C#, Windows Forms som GUI
