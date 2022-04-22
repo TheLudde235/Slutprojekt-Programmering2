@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -53,11 +53,17 @@ namespace skess
                 string seconds = (whiteTime % 60).ToString();
                 if (seconds.Length == 1)
                 {
-                    tbxWhiteTime.Text = minutes + ":0" + seconds;
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        tbxWhiteTime.Text = minutes + ":0" + seconds;
+                    }));
                 }
                 else
                 {
-                    tbxWhiteTime.Text = minutes + ":" + seconds;
+                    this.Invoke(new MethodInvoker(delegate ()
+                    {
+                        tbxWhiteTime.Text = minutes + ":0" + seconds;
+                    }));
                 }
                 whiteTime--;
             }
@@ -166,7 +172,8 @@ namespace skess
         {
             if (socket.Connected)
             {
-                socket.Disconnect(true);
+                SendMessage('g');
+                socket.Disconnect(false);
             }
             ResetGame();
 
