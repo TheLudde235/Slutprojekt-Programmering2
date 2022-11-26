@@ -62,7 +62,7 @@ namespace skess
                 {
                     this.Invoke(new MethodInvoker(delegate ()
                     {
-                        tbxWhiteTime.Text = minutes + ":0" + seconds;
+                        tbxWhiteTime.Text = minutes + ":" + seconds;
                     }));
                 }
                 whiteTime--;

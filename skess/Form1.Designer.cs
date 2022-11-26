@@ -515,7 +515,6 @@
             this.Controls.Add(this.tbxWhiteTime);
             this.Controls.Add(this.tbxBlackTime);
             this.Controls.Add(this.btnFlip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.RightToLeftLayout = true;
             this.Text = "Chess";

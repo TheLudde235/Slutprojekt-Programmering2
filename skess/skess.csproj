@@ -71,9 +71,6 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Globals.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PromotionDialogBox.resx">
       <DependentUpon>PromotionDialogBox.cs</DependentUpon>
     </EmbeddedResource>
